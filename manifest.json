@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "clear",
+	"version": "0.0.4",
+	"browser_action": {
+		"default_icon": {
+			"128": "128.png"
+		},
+		"default_title": "clear"
+	},
+	"permissions" : ["https://www.baidu.com/*"],
+	"content_scripts":[
+		{
+			"matches":["https://www.baidu.com/*"],
+			"js":["js/myDel.js"]
+		}
+	]
+}
